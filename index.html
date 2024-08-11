@@ -9,20 +9,26 @@
 <body>
     <div class="container">
         <div class="nav">
-            <div class="first-nav">
-                <input type="search" name="" id="">
-                <div>Name</div>
+            <div>
+                <div class="first-nav">
+                    <img class="icon" src="icons/magnify.svg">
+                    <input type="search" class="search-btn" name="search" placeholder="Search here">
+                </div>
+                <div class="first-nav">
+                    <img class="icon" src="icons/magnify.svg">
+                    <p>Hi, Jp Santiago</p>
+                </div>
             </div>
             <div class="sec-nav">
                 <ul>
-                    <li>New</li>
-                    <li>Upload</li>
-                    <li>Share</li>
+                    <li><button class="user">New</button></li>
+                    <li><button class="user">Upload</button></li>
+                    <li>Jp Santiago</li>
                 </ul>
-                <ul>
-                    <li>New</li>
-                    <li>Upload</li>
-                    <li>Share</li>
+                <ul class="profile-nav">
+                    <li><button class="user">New</button></li>
+                    <li><button class="user">Upload</button></li>
+                    <li><button class="user">Share</button></li>
                 </ul>
             </div>
         </div>
@@ -31,21 +37,28 @@
                 <h1>Dashboard</h1>
             </div>
             <div class="home-side">
-                <div>Home</div>
-                <div>Profile</div>
-                <div>Projects</div>
-                <div>Tasks</div>
-            </div>
-            <div class="set-side">
-                <div>Settings</div>
-                <div>Support</div>
-                <div>Privacy</div>
+                <a class="sidebar-cont">
+                    <img src="icons/home.svg"/>Home
+                </a>
+                <a class="sidebar-cont">
+                    <img src="icons/account.svg"/>Profile
+                </a>
+                <a class="sidebar-cont">
+                    <img src="icons/message.svg"/>Messages
+                </a>
+                <a class="sidebar-cont">
+                    <img src="icons/history.svg"/>History
+                </a>
+                <a class="sidebar-cont">
+                    <img src="icons/cog.svg"/>Settings
+                </a>
+
             </div>
         </div>
         <div class="main-cont">
             <div class="projects">
                 <p class="highlight">Your Projects</p>
-                
+
             <div class="article">
                 <div class="card">
                   <p class="title">Article Title</p>
@@ -63,17 +76,35 @@
                   <p class="title">Article Title</p>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
                 </div>
+                <div class="card">
+                    <p class="title">Article Title</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
+                </div>
+                <div class="card">
+                    <p class="title">Article Title</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
+                </div>
+                <div class="card">
+                    <p class="title">Article Title</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
+                </div>
             </div>
             </div>
             
             <div class="news-bar">
                 <div>
                     <p class="highlight">Announcements</p>
-                    
+                    <div class="card">
+                        <p class="title">Article Title</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
+                    </div>
                 </div>
                 <div>
                     <p class="highlight">Trending</p>
-                    
+                    <div class="card">
+                        <p class="title">Article Title</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
+                    </div>
                 </div>
             </div>
         </div>
