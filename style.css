@@ -1,0 +1,63 @@
+:root {
+    --main-color: rgba(255, 99, 71, 0.582);
+    --secondary-color: rgb(255, 255, 255);
+}
+*{
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: main-font;
+    src: url(Roboto-Light.ttf);
+}
+
+body{
+    font-family: main-font;
+
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    
+}
+.nav{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column: 2/3;
+    
+}
+.sec-nav ul{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    list-style-type: none;
+}
+
+.sidebar{
+    grid-row: 1/4;
+    display: grid;
+    grid-template-rows: 100px 1fr 1fr;
+}
+
+.main-cont{
+    grid-column: 2/-1;
+    display:grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.article{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 13px;
+}
+
+.news-bar{
+    display: grid;
+
+    justify-items: center;
+}
+
+.highlight{
+    font-weight: 300;
+    font-size: 1.5rem;
+}
