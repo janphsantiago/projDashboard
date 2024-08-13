@@ -2,6 +2,7 @@
     --main-color: #1f2937;
     --font-color: #f5f5f4;
     --bg-colors: #12161d;
+    --accent-color: #BE3144;
 }
 *{
     box-sizing: border-box;
@@ -28,8 +29,8 @@ body{
 }
 
 .nav{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    flex-direction: column;
     grid-column: 2/3;
     padding: 15px;
     background-color: var(--main-color);
@@ -39,17 +40,30 @@ body{
 .icon{
     width: 100px;
     height: 40px;
+    filter: brightness(0) invert(1);
 }
 
-.first-nav{
+.logo{
+    width: 100px;
+    height: 80px;
+}
+.first-nav,
+.sec-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+.left-nav{
     display:flex;
     align-items: center;
-    flex-wrap: wrap;
+    gap: 10px;
 }
 
 .search-btn {
-    background-color: aquamarine;
-    color: var(--font-color);
+    flex-grow: 1;
+    background-color: var(--font-color);
+    color: var(--main-color);
     border: none; 
     padding: 5px 40px;
     text-align: center;
@@ -62,18 +76,23 @@ body{
   }
   .search-btn:hover, 
   .search-btn:focus {
-    background-color: var(--main-color);
+    background-color: var(--font-color);
   }
-
+  ::placeholder {
+    color: var(--main-color);
+    opacity: 1; /* Firefox */
+  }
+  
 .sec-nav ul{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     list-style-type: none;
+    gap: 15px;
 }
 
 .user{
     padding: 10px;
-    background-color: orangered;
+    background-color: var(--accent-color);
     color: var(--font-color);
     font-size: 1rem;
     border-radius: 20px;
@@ -87,7 +106,7 @@ body{
     grid-row: 1/4;
     display: grid;
     grid-template-rows: 100px 1fr;
-    background-color: var(--main-color);
+    background-color: var(--accent-color);
     color: var(--font-color);
     font-weight: bolder;
     padding: 15px;
@@ -113,6 +132,7 @@ body{
     padding-left: 10px;
     background-color: var(--bg-colors);
     gap: 15px;
+    margin-bottom: 10px;
 }
 
 .article{
@@ -126,9 +146,13 @@ body{
     text-align: center;
     border-radius: 10px;
 }
-.card:hover{
-    background-color: #a1a1aad5;
+.main{
+    border-left: var(--accent-color) 5px solid;
 }
+.card:hover{
+    background-color: #a1a1aab2;
+}
+
 .news-bar{
     display: grid;
     padding-left: 10px;
@@ -136,7 +160,18 @@ body{
 }
 
 .highlight{
-    font-weight: 300;
+    font-weight: bolder;
     font-size: 1.5rem;
+    color: var(--font-color);
+}
+
+
+.footer{
+    grid-column: 1/3;
+    background-color: var(--main-color);
+    text-align: center;
+}
+
+a, a:visited{
     color: var(--font-color);
 }
