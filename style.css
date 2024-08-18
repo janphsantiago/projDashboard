@@ -196,17 +196,17 @@ a, a:visited{
     }
 
     .sidebar {
-        display: none; /* Hide sidebar on small screens */
+        display: none;
     }
 
     .main-cont {
         grid-column: 1;
-        grid-template-columns: 1fr; /* Single column layout */
-        padding: 0 10px; /* Adjust padding */
+        grid-template-columns: 1fr; 
+        padding: 0 10px; 
     }
 
     .article {
-        grid-template-columns: 1fr; /* Stack articles vertically */
+        grid-template-columns: 1fr;
     }
 
     .footer {
@@ -220,40 +220,32 @@ a, a:visited{
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) and (max-width: 768px) {
     .container {
-        grid-template-columns: 1fr; /* Single column layout for smaller tablets */
+        grid-template-columns: 1fr;
     }
 
     .nav {
         grid-column: 1;
         padding: 10px;
-        font-size: 1rem; /* Adjust font size */
+        font-size: 1rem; 
     }
 
     .sidebar {
-        display: none; /* Hide sidebar on medium-sized devices */
+        display: none;
     }
 
     .main-cont {
         grid-column: 1;
-        grid-template-columns: 1fr; /* Single column layout */
+        grid-template-columns: 1fr; 
         padding: 0 10px;
     }
 
     .article {
-        grid-template-columns: 1fr; /* Stack articles vertically */
+        grid-template-columns: 1fr; 
     }
 
     .footer {
         grid-column: 1;
         padding: 10px;
-        font-size: 1rem; /* Adjust font size */
+        font-size: 1rem; 
     }
 }
-
-
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {...}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {...}
